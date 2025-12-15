@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetições - Atividade 5</title>
+</head>
+<body>
+    
+    <script>
+        // 5. Faça um programa, utilizando while e listas, 
+        // que permita o usuário realizar o cadastro de um número indeterminado de pessoas 
+        // enquanto quiser e os mostre na tela ao finalizar.
+        let pessoas = [];
+        let cadastroAtivo = true;
+        while (cadastroAtivo) {
+            let nome = prompt("Digite o nome da pessoa para cadastro: ");
+            pessoas.push(nome);
+            let continuar = prompt("Deseja cadastrar outra pessoa? (s/n): ").toLowerCase();
+            if (continuar !== 's') {
+                cadastroAtivo = false;
+                console.log("Pessoas cadastradas: " + pessoas);
+            }
+        }
+    </script>
+</body>
+</html>

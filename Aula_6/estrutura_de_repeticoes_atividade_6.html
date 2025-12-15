@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetições - Atividade 6</title>
+</head>
+<body>
+   <script>
+    // 6. Faça um programa que peça uma nota, entre zero e dez. 
+    // Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
+    // Sendo maior ou igual 5 válido. OBS: UTILIZE FOR LOOP!
+    let nota;
+    for (;;) {
+        nota = prompt("Insira uma nota entre 0 e 10: ");
+            if (nota < 5) {
+            console.log("Nota inválida! Tente novamente.");
+        } else {
+            console.log("Nota válida! Você inseriu a nota: " + nota);
+            break;
+        }
+            }    
+   </script> 
+</body>
+</html>

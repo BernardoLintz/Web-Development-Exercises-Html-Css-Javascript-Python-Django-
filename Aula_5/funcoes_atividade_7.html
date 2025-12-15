@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Atividade 7</title>
+</head>
+<body>
+    
+    <script>
+    // Atividade 7: Implemente uma função chamada forcaGravitacional que receba a massa de dois corpos (m1 e m2) 
+    // e a distância entre eles (d), aplicando a fórmula da gravidade universal: 
+    // F = (G * m1 * m2) / (d^2), onde G = 6.674 * 10^-11. Depois, teste a função com valores reais.
+
+    function forcaGravitacional(m1, m2, d) {
+        const G = 6.674 * Math.pow(10, -11);
+        let F = (G * m1 * m2) / Math.pow(d, 2);
+        return F;
+    }
+    
+    // Testando a função com valores reais: massa da Terra (5.972 × 10^24 kg), massa da Lua (7.348 × 10^22 kg)
+    // e distância média entre eles (384400000 metros)  
+    let massaTerra = 5.972 * Math.pow(10, 24);
+    let massaLua = 7.348 * Math.pow(10, 22);
+    let distancia = 384400000;
+    console.log("Força gravitacional entre a Terra e a Lua: " + forcaGravitacional(massaTerra, massaLua, distancia) + " N");
+    </script>
+</body>
+</html>

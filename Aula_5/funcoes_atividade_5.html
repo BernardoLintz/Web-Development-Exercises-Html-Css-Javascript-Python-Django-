@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Atividade 5</title>
+</head>
+<body>
+    <script>
+    // Atividade 5: Faça uma função chamada calcularVelocidadeFinal que receba a velocidade inicial (Vi), 
+    // aceleração (a) e tempo (t), retornando a velocidade final usando a fórmula: Vf = Vi + (a * t). 
+    // Teste a função para um carro que parte do repouso com aceleração de 3 m/s² por 10 segundos.
+
+    function calcularVelocidadeFinal(VelocidadeInicial, aceleracao, tempo){
+        let VelocidadeFinal = (VelocidadeInicial + (aceleracao * tempo));
+        return VelocidadeFinal;
+    }
+    // Testando a função para um carro que parte do repouso (Vi = 0) com aceleração de 3 m/s² por 10 segundos
+    console.log("Velocidade final do carro: " + calcularVelocidadeFinal(0, 3, 10) + " m/s");
+    </script>
+</body>
+</html>

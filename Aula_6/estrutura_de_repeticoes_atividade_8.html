@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetições - Atividade 8</title>
+</head>
+
+<body>
+
+    <script>
+        // 8. Faça um programa que, dado um conjunto de N números, determine o menor valor, 
+        // o maior valor e a soma dos valores. OBS: UTILIZE FOR LOOP!
+        let N = parseInt(prompt("Quantos números você deseja inserir? "));
+
+        while (isNaN(N) || N <= 0) {
+
+            alert("Por favor, insira um número válido e positivo de entradas.");
+            N = parseInt(prompt("Quantos números você deseja inserir? "));
+        }
+
+        let soma = 0;
+        let MenorValor, MaiorValor;
+
+        for (i = 1; i <= N; i++) {
+            let numero = parseFloat(prompt("Digite o numero " + i + ": "));
+
+            // Valida o número inserido
+            while (isNaN(numero)) {
+                alert("Valor inválido! Por favor, insira um número válido.");
+                numero = parseFloat(prompt("Digite o número " + i + ": "));
+            }
+
+            //Soma o número à variável soma
+            soma += numero;
+
+            // Define o menor e o maior valor na primeira iteração
+
+            if (i === 1) {
+                MenorValor = numero;
+                MaiorValor = numero;
+
+            } else {
+
+            // Atualiza o menor valor e o maior valor
+
+                if (numero < MenorValor) {
+                    MenorValor = numero;
+                }
+                if (numero > MaiorValor) {
+                    MaiorValor = numero;
+                }
+            }
+        }
+        // Exibe os resultados no console
+        console.log("Menor valor: " + MenorValor);
+        console.log("Maior valor: " + MaiorValor);
+        console.log("Soma dos valores: " + soma);
+    </script>
+</body>
+
+</html>

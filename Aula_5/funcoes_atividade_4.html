@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Atividade 4</title>
+</head>
+<body>
+    <script>
+    // Atividade 4: Desenvolva uma função chamada volumeEsfera que receba o raio como parâmetro e 
+    // retorne o volume da esfera usando a fórmula: V = (4/3) * π * r³. Teste a função com um raio de 10.
+
+    function volumeEsfera(raio) {
+        let volume = (4/3 * Math.PI * Math.pow(raio, 3));
+        return volume.toFixed(2);
+        }
+    // Testando a função com um raio de 10
+    console.log("Volume da esfera com raio 10: " + volumeEsfera(10));
+    </script>
+</body>
+</html>

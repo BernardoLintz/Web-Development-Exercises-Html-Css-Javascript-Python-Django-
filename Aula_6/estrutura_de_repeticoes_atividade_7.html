@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetições - Atividade 7</title>
+</head>
+<body>
+    <script>
+    // 7. Faça um programa que calcule o mostre a média aritmética de N notas.
+    // OBS: UTILIZE FOR LOOP!
+    let NumeroDeNotas = parseInt(prompt("Quantas notas você deseja inserir para calcular a média aritmética? "));
+    let i;
+    let soma = 0;
+    for (i = 1; i <= NumeroDeNotas; i++) {
+        let nota = parseFloat(prompt("Digite a nota " + i + ": "));
+        soma += nota;
+         }
+    let media = soma / NumeroDeNotas;
+    media = parseFloat(media.toFixed(2));
+    console.log("A média aritmética das notas inseridas é: " + media);
+
+    </script>
+</body>
+</html>

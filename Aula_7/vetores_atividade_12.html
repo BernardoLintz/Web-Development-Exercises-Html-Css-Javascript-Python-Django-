@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores - Atividade 12</title>
+
+</head>
+<body>
+    <script>    
+
+// 12 – ORDENAÇÃO DE FATURAMENTO
+// Em um sistema financeiro será necessário organizar os dados antes da geração de gráficos.
+// Crie um array em JavaScript contendo os seguintes valores de faturamento:
+// 1500
+// 2300
+// 1800
+// 900
+// 3200
+// 2100
+// Ordene os valores em ordem crescente e exiba o array ordenado no console ou alert.
+// Dica: o método sort() pode ser utilizado para ordenar arrays numéricos.
+
+let faturamento = [1500, 2300, 1800, 900, 3200, 2100];
+faturamento.sort(function(a,b) {
+    return a - b;
+});  
+console.log(faturamento);
+
+    </script>
+    
+</body>
+</html>

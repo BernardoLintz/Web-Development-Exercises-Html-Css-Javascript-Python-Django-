@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores - Atividade 13</title>
+
+</head>
+<body>
+    <script>
+// 13 – SEGUNDO MAIOR VALOR DE VENDAS
+// Em um sistema comercial será necessário identificar o segundo melhor resultado de vendas.
+//Crie um array em JavaScript contendo os seguintes valores:
+// 500
+// 1200
+// 800
+// 2000
+// 1500
+// Identifique o segundo maior valor do array e exiba o resultado no console ou alert.
+// Dica: você pode ordenar o array ou controlar o maior e o segundo maior valor manualmente.
+
+let valoresDeVendas = [500, 1200, 800, 2000, 1500];
+valoresDeVendas.sort(function(a,b) {
+    return b - a;
+});
+console.log("O segundo maior valor de vendas é " + valoresDeVendas[1]);
+    </script>
+
+</body>
+</html>
